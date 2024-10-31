@@ -1,47 +1,49 @@
-/*
- * #2e3440 : black
- * #3b4252 : dark grey
- * #434c5e : grey
- * #4c566a : light grey
- * #e5e9f0 : white
- * #d8dee9 : blue-ish white
- * #8fbcbb : green-ish turquoise
- * #88c0d0 : blue-ish turquoise
- * #81a1c1 : light blue
- * #5e81ac : blue
- * #bf616a : red
- * #d08770 : orange
- * #ebcb8b : yellow
- * #a3be8c : green
- * #b48ead : pink
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
 
-
 :root {
-    --black : #2e3440;
-    --dark-grey : #3b4252;
-    --grey : #434c5e;
+    --black: #2e3440;
+    --dark-grey: #3b4252;
+    --grey: #434c5e;
     --light-grey: #4c566a;
     --white: #e5e9f0;
     --blue-white: #d8dee9;
-    --green-turquoise : #8fbcbb;
-    --blue-turquoise : #88c0d0;
-    --light-blue : #81a1c1;
-    --blue : #5e81ac;
-    --red : #bf616a;
-    --orange : #d08770;
-    --yellow : #ebcb8b;
-    --green : #a3be8c;
-    --pink : #b48ead;
-}
-
-#text1 {
-    color: white;
+    --green-turquoise: #8fbcbb;
+    --blue-turquoise: #88c0d0;
+    --light-blue: #81a1c1;
+    --blue: #5e81ac;
+    --red: #bf616a;
+    --orange: #d08770;
+    --yellow: #ebcb8b;
+    --green: #a3be8c;
+    --pink: #b48ead;
 }
 
 body {
     background-color: var(--black);
-    font-family: "Fira Code"
+    color: var(--white);
+    font-family: "Fira Code", monospace;
+    margin-left: 200px;
+}
+
+#text1 {
+    margin-left: 30vw;
+    font-size: 2em;
+    color: var(--blue-turquoise);
+    display: inline-block;
+    position: relative;
+}
+
+.cursor {
+    color: var(--blue-turquoise);
+    font-size: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
