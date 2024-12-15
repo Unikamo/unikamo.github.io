@@ -23,6 +23,7 @@ body {
     color: var(--white);
     font-family: "Fira Code", monospace;
     margin-left: 200px;
+    display: inline-block;
 }
 
 #text1 {
